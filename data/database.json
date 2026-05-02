@@ -1,0 +1,444 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "name": "Administrator",
+      "role": "admin",
+      "passwordHash": "9607aec2ea7e121ca26405726eb12973:7ea31812923b90469ef72642db0cb54b92e887b97716a02a27c531a04b9fcc49",
+      "createdAt": "2026-05-01T21:22:43.152Z"
+    },
+    {
+      "id": 2,
+      "username": "worker",
+      "name": "Worker",
+      "role": "worker",
+      "passwordHash": "22039bbcb2f6f43c8d7cc4f8fc3288ce:94771fa7585be80bbe051468d135e4a3f7cada6a5bb1e67a7d104b981b27bec4",
+      "createdAt": "2026-05-01T21:22:43.152Z"
+    },
+    {
+      "id": 3,
+      "username": "programmer",
+      "name": "Programmer",
+      "role": "programmer",
+      "passwordHash": "91e419499cd8d3e238a6b9645f8e4317:ac1f4ede96c000e7aaab389cdd25c3d7bc28d5347e40e7c19b1a68e02de948b4",
+      "createdAt": "2026-05-01T21:22:43.152Z"
+    },
+    {
+      "id": 4,
+      "username": "abhimohajan",
+      "name": "Abhi mohajan",
+      "role": "programmer",
+      "passwordHash": "fb4a5e5f7506fdd0bf7fc6680f93dded:b719561664474a4dbf1eb891116f732e5ffeb7c607809742e4a70efbd4397f96",
+      "createdAt": "2026-05-02T00:24:51.389Z"
+    }
+  ],
+  "auditLog": [
+    {
+      "at": "2026-05-02T07:37:26.430Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T07:33:43.989Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T07:30:16.519Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T07:23:16.529Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T07:19:25.761Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T07:16:06.079Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T07:13:46.011Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T07:12:50.593Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T07:10:10.360Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T07:04:25.437Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:45:18.068Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:41:29.333Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:32:05.503Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:23:09.543Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:20:30.680Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:18:11.553Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:17:32.972Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:15:15.501Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:07:06.286Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:06:44.233Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:01:46.227Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:01:22.131Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:01:12.889Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T06:01:12.876Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T05:55:13.252Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T04:59:37.851Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T04:57:02.303Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T04:56:58.319Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-02T00:25:10.709Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-02T00:24:51.391Z",
+      "user": "admin",
+      "action": "created user abhimohajan"
+    },
+    {
+      "at": "2026-05-02T00:23:44.851Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T00:23:44.847Z",
+      "user": "programmer",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-02T00:20:27.061Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T00:17:48.503Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T00:17:48.498Z",
+      "user": "programmer",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-02T00:11:35.392Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T00:11:35.387Z",
+      "user": "programmer",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-02T00:11:05.103Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T00:11:05.098Z",
+      "user": "programmer",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-02T00:08:02.981Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T00:08:02.793Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T00:05:14.952Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T00:05:14.946Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T00:01:07.801Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-02T00:01:07.795Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:57:17.236Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:57:17.222Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:56:28.390Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:56:09.518Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:56:09.510Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:50:55.469Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:50:50.323Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:50:39.569Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:50:07.841Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:50:02.628Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:49:57.886Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:49:51.702Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:40:36.414Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:28:38.970Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:04:09.063Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T23:00:52.671Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T22:38:32.361Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T22:34:14.013Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T22:33:59.272Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T22:23:33.112Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T22:23:31.775Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T22:23:29.992Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T22:23:06.783Z",
+      "user": "admin",
+      "action": "quick login"
+    },
+    {
+      "at": "2026-05-01T22:21:28.115Z",
+      "user": "admin",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-01T22:18:45.387Z",
+      "user": "admin",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-01T22:15:06.408Z",
+      "user": "admin",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-01T22:14:23.855Z",
+      "user": "admin",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-01T22:11:29.729Z",
+      "user": "admin",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-01T22:09:50.943Z",
+      "user": "admin",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-01T22:09:40.522Z",
+      "user": "admin",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-01T21:45:02.944Z",
+      "user": "programmer",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-01T21:42:43.270Z",
+      "user": "programmer",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-01T21:38:55.196Z",
+      "user": "programmer",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-01T21:34:21.527Z",
+      "user": "worker",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-01T21:22:50.642Z",
+      "user": "admin",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-01T21:21:46.398Z",
+      "user": "programmer",
+      "action": "login"
+    }
+  ],
+  "uploads": []
+}

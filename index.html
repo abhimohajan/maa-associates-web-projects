@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAA ASSOCIATES - Customs Clearing &amp; Forwarding Agent</title>
+  <link rel="stylesheet" href="style.css?v=role-search-1">
+</head>
+<body>
+<div class="wrap">
+<div class="top brandHeader">
+  <div class="brandLogo" aria-hidden="true">MA</div>
+  <div class="brandText">
+    <h1>MAA ASSOCIATES</h1>
+    <div>Customs Clearing &amp; Forwarding Agent</div>
+  </div>
+</div>
+<div class="actions">
+<button type="button" class="secondary" onclick="location.href='/dashboard'">Back</button><button type="button" class="fileLabel" onclick="openXMLFilePicker()">XML File Upload</button><input id="xmlFile" class="xmlInput" type="file" accept=".xml,text/xml,application/xml" onchange="handleXMLFileSelect(event)">
+<button onclick="processXML()">Process</button><button class="exportBtn" onclick="openNoteSheet()">Note Sheet</button><button class="excelBtn" onclick="downloadCSV()">Download CSV</button><button class="secondary" onclick="window.print()">Print</button><button class="light" onclick="togglePreview()">Preview Report</button><button class="light" onclick="downloadHTML()">Download HTML</button><button class="danger" onclick="clearForm()">Clear XML Data</button><div id="status" class="status"></div>
+</div>
+<div class="boePage">
+  <div class="notiBar">
+    <div class="notiBox"><label for="notiNo">Noti No</label><input id="notiNo" type="text" placeholder="Enter Noti No"></div>
+    <div class="notiBox"><label for="notiDate">Date</label><input id="notiDate" type="text" inputmode="numeric" maxlength="10" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}" onfocus="openDatePicker(this)" onclick="openDatePicker(this)" onchange="closeDatePicker(this)" onblur="closeDatePicker(this)"></div>
+  </div>
+  <div class="formTitle"><span>1. BILL OF ENTRY / IMPORT</span><div class="groupBox"><label for="groupValue">Group</label><input id="groupValue" type="text" placeholder="Enter Group"></div><span class="entryBadge">ASYCUDA XML AUTO FORM</span></div>
+  <form id="entryForm" class="grid"></form>
+<div class="itemDataBox">
+<h2 style="margin:18px 0 8px;color:#14532d">Item Details</h2>
+<table id="itemDataTable"><thead><tr><th>37<br>Item No</th><th>38<br>Commercial Description</th><th>34<br>HS Code</th><th>49<br>Net Weight</th><th>48<br>Gross Weight</th><th>39<br>Item Price (USD)</th></tr></thead><tbody><tr><td colspan="6">No Item Data Found</td></tr></tbody></table>
+</div>
+<div class="detailBox show" id="containerDataBox">
+<h2 style="margin:18px 0 8px;color:#14532d">Container Number & Container Weight</h2><div class="icdBox programmerOnly" style="display:none"><input id="icdEmail" type="email" autocomplete="username" placeholder="ICD E-mail"><input id="icdPassword" type="password" autocomplete="current-password" placeholder="ICD Password"></div>
+<table id="containerTable"><thead><tr><th>SL</th><th>Container Number</th><th>Container Weight</th></tr></thead><tbody><tr><td colspan="3">No Container Data Found</td></tr></tbody></table>
+</div>
+</div>
+<div id="docPreview" class="docPreview"></div>
+<div style="margin-top:16px"><button type="button" onclick="toggleDetailData()">Detail Data</button></div>
+
+<div id="detailDataBox" class="detailBox">
+<table id="summaryTable"><thead><tr><th>No</th><th>Field</th><th>Value</th><th>XML Path</th></tr></thead><tbody></tbody></table>
+</div>
+</div>
+<script src="script.js?v=note-sheet-values-3"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
