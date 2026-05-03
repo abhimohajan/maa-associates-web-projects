@@ -2,17 +2,28 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
+  <script>
+  (function () {
+    if (!location.hostname.endsWith('github.io')) return;
+    var path = location.pathname || '/';
+    var dir = path.endsWith('/') ? path : (/\.html?$/i.test(path) ? (path.replace(/\/[^/]+$/, '/') || '/') : path + '/');
+    var b = document.createElement('base');
+    b.href = location.origin + dir;
+    document.head.appendChild(b);
+  })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MAA ASSOCIATES - ASYCUDA Tool</title>
   <link rel="stylesheet" href="style.css?v=role-search-1">
   <script>
   (function () {
-    if (location.hostname.endsWith('github.io') && !sessionStorage.getItem('maaStaticAuth')) {
-      location.replace('index.html');
+    var gh = location.hostname.endsWith('github.io');
+    if (gh && !sessionStorage.getItem('maaStaticAuth')) {
+      location.replace(new URL('index.html', document.baseURI).href);
     }
   })();
   function maaHome() {
-    if (location.hostname.endsWith('github.io')) location.href = 'index.html';
+    if (location.hostname.endsWith('github.io')) location.href = new URL('index.html', document.baseURI).href;
     else location.href = '/dashboard';
   }
   </script>

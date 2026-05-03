@@ -480,8 +480,8 @@ function openNoteSheet(){
   if(!confirm('Important fields empty ('+miss.join(', ')+'). Note Sheet open korben?'))return;
  }
  localStorage.setItem('asycudaNoteSheetData',JSON.stringify(buildNoteSheetData()));
- window.location.href='note_sheet.html';
  showStatus('Note Sheet linked with current form values.');
+ window.location.href=new URL('note_sheet.html',document.baseURI).href;
 }
 function buildReportHTML(){
  const rows=getFormRows(); const containers=getContainerRows(); const top=getTopFields();

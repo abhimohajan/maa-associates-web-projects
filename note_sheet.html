@@ -2,12 +2,22 @@
 <html lang="bn">
 <head>
 <meta charset="utf-8">
+<script>
+(function () {
+  if (!location.hostname.endsWith('github.io')) return;
+  var path = location.pathname || '/';
+  var dir = path.endsWith('/') ? path : (/\.html?$/i.test(path) ? (path.replace(/\/[^/]+$/, '/') || '/') : path + '/');
+  var b = document.createElement('base');
+  b.href = location.origin + dir;
+  document.head.appendChild(b);
+})();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Note Sheet 2026</title>
 <link rel="stylesheet" href="note_sheet_style.css?v=docx-linked-24">
 </head>
 <body>
-<div class="toolbar"><div class="title">Note Sheet 2026</div><div><button onclick="location.href='app.html'">Back</button><button onclick="window.print()">Print / Save PDF</button></div></div>
+<div class="toolbar"><div class="title">Note Sheet 2026</div><div><button type="button" onclick="location.href=new URL('app.html',document.baseURI).href">Back</button><button type="button" onclick="window.print()">Print / Save PDF</button></div></div>
 <main class="note-sheet">
 <p class="doc-p" style=""><span class="b u" style="font-family:'SutonnyMJ',SutonnyMJ,SolaimanLipi,serif;font-size:14.0pt">cvZv-</span><span class="red-link b u" style="color:#FF0000;font-family:'SutonnyMJ',SutonnyMJ,SolaimanLipi,serif;font-size:14.0pt" data-red-index="1" data-template="01">01</span></p>
 <p class="doc-p" style="text-align:center"><span class="b" style="font-family:'SutonnyMJ',SutonnyMJ,SolaimanLipi,serif;font-size:14.0pt">bw_ bs- 5-Kvm (</span><span class="red-link b" style="color:#FF0000;font-family:'SutonnyMJ',SutonnyMJ,SolaimanLipi,serif;font-size:14.0pt" data-red-index="2" data-template="1264">1264</span><span class="b" style="font-family:'SutonnyMJ',SutonnyMJ,SolaimanLipi,serif;font-size:14.0pt">) </span><span class="b" style="font-family:'SutonnyMJ',SutonnyMJ,SolaimanLipi,serif;font-size:14.0pt">Avgt/AvBwmwW/MÖæc-</span><span class="red-link b" style="color:#FF0000;font-family:'SutonnyMJ',SutonnyMJ,SolaimanLipi,serif;font-size:14.0pt" data-red-index="3" data-template="04">04</span><span class="b" style="font-family:'SutonnyMJ',SutonnyMJ,SolaimanLipi,serif;font-size:14.0pt">/</span><span class="red-link b" style="color:#FF0000;font-family:'SutonnyMJ',SutonnyMJ,SolaimanLipi,serif;font-size:14.0pt" data-red-index="4" data-template="2026">2026</span><span class="b" style="font-family:'SutonnyMJ',SutonnyMJ,SolaimanLipi,serif;font-size:14.0pt"> </span><span class="b" style="font-family:'SutonnyMJ',SutonnyMJ,SolaimanLipi,serif;font-size:14.0pt">Bs</span></p>
