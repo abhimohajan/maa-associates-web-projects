@@ -1001,7 +1001,9 @@ const httpServer = http.createServer(async (req, res) => {
 function startServer(port = PORT) {
   normalizeDbUserIdsIfNeeded();
   return httpServer.listen(port, () => {
-    console.log(`MAA ASSOCIATES app running at http://localhost:${port}`);
+    const addr = httpServer.address();
+    const p = typeof addr === 'object' && addr && addr.port != null ? addr.port : port;
+    console.log(`MAA ASSOCIATES app running at http://localhost:${p}`);
   });
 }
 

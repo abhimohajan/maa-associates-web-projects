@@ -16,7 +16,6 @@ Thumbs.db
 .vscode/
 
 # Electron / build output
-desktop-dist-fixed/
 dist/
 out/
 

@@ -14,7 +14,7 @@
         "appId": "com.maaassociates.asycuda",
         "productName": "MAA ASSOCIATES ASYCUDA",
         "directories": {
-            "output": "desktop-dist-fixed"
+            "output": "../maa-associates-web-projects-exe"
         },
         "files": [
             "electron-main.js",

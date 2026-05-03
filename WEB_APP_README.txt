@@ -1,10 +1,19 @@
 ﻿MAA ASSOCIATES Web Application
 
-Run:
+Run (browser):
   node server.js
 
 Open:
   http://localhost:3000
+
+Desktop (Electron — full app in one window):
+  npm install
+  npm run desktop
+  (Embedded server; DB copy in Electron userData / maa-data — see %APPDATA% for app name from package.json)
+
+Windows installer EXE:
+  npm run build:win
+  Output folder: ..\maa-associates-web-projects-exe
 
 Default users:
   admin / admin123
