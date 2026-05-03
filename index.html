@@ -3,63 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAA ASSOCIATES - Customs Clearing &amp; Forwarding Agent</title>
-  <link rel="stylesheet" href="style.css?v=role-search-1">
+  <title>Login - MAA ASSOCIATES</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f3f6fb;color:#14213d}
+    .shell{max-width:980px;margin:22px auto;padding:16px}
+    .hero{background:linear-gradient(135deg,#0b5f4a,#0f766e 55%,#14532d);color:#fff;border-radius:16px;padding:28px;margin-bottom:18px}
+    .hero h1{margin:0;font-size:28px}
+    .hero p{margin:8px 0 0;color:#dcfce7;font-weight:700;font-size:12px;text-transform:uppercase}
+    .card{background:#fff;border:1px solid #dbe3ef;border-radius:16px;padding:28px;box-shadow:0 18px 45px #0f172a1a;max-width:420px;margin:0 auto}
+    .card h2{margin:0 0 6px;color:#14532d;font-size:26px}
+    .card .sub{margin:0 0 20px;color:#64748b;font-size:14px}
+    label{display:block;font-weight:700;font-size:13px;color:#334155;margin-bottom:4px}
+    input{width:100%;box-sizing:border-box;height:44px;border:1px solid #cbd5e1;border-radius:10px;padding:0 10px;font-size:15px;margin:0 0 12px}
+    input:focus{outline:3px solid #bbf7d0;border-color:#0f766e}
+    .btn{display:block;width:100%;height:46px;border:0;border-radius:10px;background:#0f766e;color:#fff;font-weight:800;font-size:15px;cursor:pointer;margin-top:6px}
+    .btn:hover{filter:brightness(1.05)}
+    .muted{margin:16px 0 0;font-size:12px;color:#64748b;line-height:1.45}
+    .badge{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:6px 10px;font-weight:800;font-size:11px;text-transform:uppercase;margin-bottom:10px}
+    .err{background:#fef2f2;color:#991b1b;border:1px solid #fecaca;border-radius:10px;padding:10px 12px;font-weight:700;margin-bottom:14px;display:none}
+  </style>
 </head>
 <body>
-<div class="wrap">
-<div class="top brandHeader">
-  <div class="brandLogo" aria-hidden="true">MA</div>
-  <div class="brandText">
+<div class="shell">
+  <div class="hero">
+    <div class="badge">Secure ASYCUDA Portal</div>
     <h1>MAA ASSOCIATES</h1>
-    <div>Customs Clearing &amp; Forwarding Agent</div>
+    <p>Customs Clearing &amp; Forwarding Agent</p>
+  </div>
+  <div class="card">
+    <h2>Sign in</h2>
+    <p class="sub">GitHub Pages: static gate. Full account login: <b>localhost:3000</b> (Node server).</p>
+    <div id="err" class="err"></div>
+    <form id="loginForm" novalidate>
+      <label for="username">Username</label>
+      <input id="username" name="username" autocomplete="username" placeholder="Enter username" required>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter password" required>
+      <button type="submit" class="btn">Continue to ASYCUDA Tool</button>
+    </form>
+    <p class="muted">Ei page GitHub.io te ASYCUDA tool khular age ekbar confirm korar jonno. Username + password khali na hole <b>app.html</b> e jabe. Asol login server-e.</p>
   </div>
 </div>
-<div class="actions">
-<button type="button" class="secondary" onclick="location.href='/dashboard'">Back</button><button type="button" class="fileLabel" onclick="openXMLFilePicker()">XML File Upload</button><input id="xmlFile" class="xmlInput" type="file" accept=".xml,text/xml,application/xml" onchange="handleXMLFileSelect(event)">
-<button onclick="processXML()">Process</button><button class="exportBtn" onclick="openNoteSheet()">Note Sheet</button><button class="excelBtn" onclick="downloadCSV()">Download CSV</button><button class="secondary" onclick="window.print()">Print</button><button class="light" onclick="togglePreview()">Preview Report</button><button class="light" onclick="downloadHTML()">Download HTML</button><button class="danger" onclick="clearForm()">Clear XML Data</button><div id="status" class="status"></div>
-</div>
-<div class="boePage">
-  <div class="notiBar">
-    <div class="notiBox"><label for="notiNo">Noti No</label><input id="notiNo" type="text" placeholder="Enter Noti No"></div>
-    <div class="notiBox"><label for="notiDate">Date</label><input id="notiDate" type="text" inputmode="numeric" maxlength="10" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}" onfocus="openDatePicker(this)" onclick="openDatePicker(this)" onchange="closeDatePicker(this)" onblur="closeDatePicker(this)"></div>
-  </div>
-  <div class="formTitle"><span>1. BILL OF ENTRY / IMPORT</span><div class="groupBox"><label for="groupValue">Group</label><input id="groupValue" type="text" placeholder="Enter Group"></div><span class="entryBadge">ASYCUDA XML AUTO FORM</span></div>
-  <form id="entryForm" class="grid"></form>
-<div class="itemDataBox">
-<h2 style="margin:18px 0 8px;color:#14532d">Item Details</h2>
-<table id="itemDataTable"><thead><tr><th>37<br>Item No</th><th>38<br>Commercial Description</th><th>34<br>HS Code</th><th>49<br>Net Weight</th><th>48<br>Gross Weight</th><th>39<br>Item Price (USD)</th></tr></thead><tbody><tr><td colspan="6">No Item Data Found</td></tr></tbody></table>
-</div>
-<div class="detailBox show" id="containerDataBox">
-<h2 style="margin:18px 0 8px;color:#14532d">Container Number & Container Weight</h2><div class="icdBox programmerOnly" style="display:none"><input id="icdEmail" type="email" autocomplete="username" placeholder="ICD E-mail"><input id="icdPassword" type="password" autocomplete="current-password" placeholder="ICD Password"></div>
-<table id="containerTable"><thead><tr><th>SL</th><th>Container Number</th><th>Container Weight</th></tr></thead><tbody><tr><td colspan="3">No Container Data Found</td></tr></tbody></table>
-</div>
-</div>
-<div id="docPreview" class="docPreview"></div>
-<div style="margin-top:16px"><button type="button" onclick="toggleDetailData()">Detail Data</button></div>
-
-<div id="detailDataBox" class="detailBox">
-<table id="summaryTable"><thead><tr><th>No</th><th>Field</th><th>Value</th><th>XML Path</th></tr></thead><tbody></tbody></table>
-</div>
-</div>
-<script src="script.js?v=note-sheet-values-4"></script>
+<script>
+(function () {
+  var form = document.getElementById('loginForm');
+  var err = document.getElementById('err');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var u = document.getElementById('username').value.trim();
+    var p = document.getElementById('password').value;
+    if (!u || !p) {
+      err.style.display = 'block';
+      err.textContent = 'Username ar password den.';
+      return;
+    }
+    err.style.display = 'none';
+    sessionStorage.setItem('maaStaticAuth', '1');
+    sessionStorage.setItem('maaStaticUser', u);
+    location.href = 'app.html';
+  });
+})();
+</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

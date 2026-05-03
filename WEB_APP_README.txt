@@ -20,4 +20,8 @@ Panels:
   Programmer: project/database overview
 
 Important:
-  Use the localhost URL for password protection. Opening index.html directly with file:// bypasses the server login.
+  Use the localhost URL for password protection. Opening app.html directly with file:// bypasses the server login.
+
+GitHub Pages (static):
+  Site root serves index.html (static gate). ASYCUDA tool is app.html after Continue.
+  Full login + panels + hscode: run node server.js on localhost:3000.

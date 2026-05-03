@@ -711,7 +711,8 @@ function serveFile(res, filePath) {
   });
 }
 function serveAppFile(req, res, filePath, user) {
-  if (path.basename(filePath).toLowerCase() !== 'index.html') return serveFile(res, filePath);
+  const base = path.basename(filePath).toLowerCase();
+  if (base !== 'index.html' && base !== 'app.html') return serveFile(res, filePath);
   fs.readFile(filePath, 'utf8', (err, html) => {
     if (err) return send(res, 404, 'Not found', 'text/plain; charset=utf-8');
     const role = escapeHtml(user?.role || '');
@@ -981,8 +982,11 @@ const httpServer = http.createServer(async (req, res) => {
     return;
   }
   const protectedFiles = {
-    '/app': 'index.html', '/index.html': 'index.html', '/note_sheet.html': 'note_sheet.html', '/style.css': 'style.css', '/script.js': 'script.js', '/note_sheet_style.css': 'note_sheet_style.css', '/README.txt': 'README.txt'
+    '/app': 'app.html', '/app.html': 'app.html', '/note_sheet.html': 'note_sheet.html', '/style.css': 'style.css', '/script.js': 'script.js', '/note_sheet_style.css': 'note_sheet_style.css', '/README.txt': 'README.txt'
   };
+  if (req.method === 'GET' && url.pathname === '/index.html') {
+    return serveFile(res, path.join(ROOT, 'index.html'));
+  }
   if (req.method === 'GET' && url.pathname.startsWith('/fonts/')) {
     const fileName = path.basename(url.pathname);
     if (!/^SutonnyCMJ-(Regular|Bold)\.ttf$/i.test(fileName)) return send(res, 404, 'Not found', 'text/plain; charset=utf-8');

@@ -20,6 +20,7 @@
             "electron-main.js",
             "server.js",
             "index.html",
+            "app.html",
             "style.css",
             "script.js",
             "note_sheet.html",
