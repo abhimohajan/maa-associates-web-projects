@@ -2,22 +2,6 @@
   "users": [
     {
       "id": 1,
-      "username": "admin",
-      "name": "Administrator",
-      "role": "admin",
-      "passwordHash": "9607aec2ea7e121ca26405726eb12973:7ea31812923b90469ef72642db0cb54b92e887b97716a02a27c531a04b9fcc49",
-      "createdAt": "2026-05-01T21:22:43.152Z"
-    },
-    {
-      "id": 2,
-      "username": "worker",
-      "name": "Worker",
-      "role": "worker",
-      "passwordHash": "22039bbcb2f6f43c8d7cc4f8fc3288ce:94771fa7585be80bbe051468d135e4a3f7cada6a5bb1e67a7d104b981b27bec4",
-      "createdAt": "2026-05-01T21:22:43.152Z"
-    },
-    {
-      "id": 3,
       "username": "programmer",
       "name": "Programmer",
       "role": "programmer",
@@ -25,15 +9,174 @@
       "createdAt": "2026-05-01T21:22:43.152Z"
     },
     {
-      "id": 4,
+      "id": 2,
       "username": "abhimohajan",
       "name": "Abhi mohajan",
       "role": "programmer",
       "passwordHash": "fb4a5e5f7506fdd0bf7fc6680f93dded:b719561664474a4dbf1eb891116f732e5ffeb7c607809742e4a70efbd4397f96",
       "createdAt": "2026-05-02T00:24:51.389Z"
+    },
+    {
+      "id": 3,
+      "username": "maa",
+      "name": "MAA ASSOCIATES",
+      "role": "admin",
+      "passwordHash": "5f270edac3754e142450b8937144c1a5:b6b5e5d071d37ca74af09683f31d640c9d1530e7c59f59aa309d9b97d5eecc09",
+      "createdAt": "2026-05-03T16:40:57.305Z",
+      "passwordUpdatedAt": "2026-05-03T16:41:16.936Z"
     }
   ],
   "auditLog": [
+    {
+      "at": "2026-05-03T18:52:29.954Z",
+      "user": "abhimohajan",
+      "action": "tariff row delete id 1"
+    },
+    {
+      "at": "2026-05-03T18:52:20.487Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T18:41:59.647Z",
+      "user": "abhimohajan",
+      "action": "tariff row add 72124099"
+    },
+    {
+      "at": "2026-05-03T18:40:02.236Z",
+      "user": "abhimohajan",
+      "action": "tariff row add 72104990"
+    },
+    {
+      "at": "2026-05-03T18:38:13.236Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T18:11:26.583Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T18:01:21.278Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T17:52:19.095Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T17:43:56.723Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T17:33:35.790Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T17:22:14.940Z",
+      "user": "maa",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T17:21:23.101Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T17:11:56.394Z",
+      "user": "abhimohajan",
+      "action": "deleted user worker"
+    },
+    {
+      "at": "2026-05-03T17:11:52.981Z",
+      "user": "abhimohajan",
+      "action": "deleted user admin"
+    },
+    {
+      "at": "2026-05-03T17:05:20.196Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T16:57:52.790Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T16:49:03.537Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T16:41:16.937Z",
+      "user": "abhimohajan",
+      "action": "reset password for maa"
+    },
+    {
+      "at": "2026-05-03T16:40:57.308Z",
+      "user": "abhimohajan",
+      "action": "created user maa"
+    },
+    {
+      "at": "2026-05-03T15:13:44.407Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T15:12:56.623Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T15:11:01.888Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T15:09:48.567Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T15:09:44.216Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T15:08:05.602Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T15:05:41.068Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T15:02:52.688Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T15:02:34.631Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T15:02:14.719Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
+    {
+      "at": "2026-05-03T14:59:49.127Z",
+      "user": "abhimohajan",
+      "action": "login"
+    },
     {
       "at": "2026-05-02T07:37:26.430Z",
       "user": "admin",
@@ -440,5 +583,23 @@
       "action": "login"
     }
   ],
-  "uploads": []
+  "uploads": [],
+  "hsCodes": [],
+  "tariffRows": [
+    {
+      "id": 2,
+      "hsCode": "72124099",
+      "description": "",
+      "cd": "",
+      "sd": "",
+      "vat": "",
+      "ait": "",
+      "rd": "",
+      "at": "",
+      "tti": "",
+      "rawTail": "",
+      "updatedAt": "2026-05-03T18:41:59.646Z",
+      "createdBy": "abhimohajan"
+    }
+  ]
 }

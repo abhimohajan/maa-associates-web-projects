@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Logs & env
+*.log
+npm-debug.log*
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Electron / build output
+desktop-dist-fixed/
+dist/
+out/
+
+# Optional local DB copy (uncomment if you never want DB in git)
+# data/database.json

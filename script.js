@@ -373,11 +373,14 @@ function openDatePicker(el){
 function closeDatePicker(el){
  const v=el.value;el.type='text';el.placeholder='dd/mm/yyyy';el.value=formatDateDDMMYYYY(v);
 }
-function validateImportantFields(){
+function getMissingImportantFields(){
  const top=getTopFields();
- const missing=[!clean(top.notiNo),!clean(top.notiDate),!clean(getVal('REGISTRATION NUMBER')),!clean(getVal('REGISTRATION DATE'))].some(Boolean);
- if(missing){alert('Field the important form');return false;}
- return true;
+ const miss=[];
+ if(!clean(top.notiNo))miss.push('Noti No');
+ if(!clean(top.notiDate))miss.push('Date');
+ if(!clean(getVal('REGISTRATION NUMBER')))miss.push('Registration Number');
+ if(!clean(getVal('REGISTRATION DATE')))miss.push('Registration Date');
+ return miss;
 }
 function parseAndFill(text){try{const doc=new DOMParser().parseFromString(text,'text/xml');if(doc.querySelector('parsererror'))throw Error('Invalid XML');lastParsedExtras={shippingAgent:shippingAgentValue(doc)};let c={value:'',path:'AUTO:ContainerNumber'};const itemRows=extractItemRows(doc);const filled=FIELDS.map(f=>{let v='',p=f.path;if(f.path==='AUTO:BillOfEntry')v=(xmlValue(doc,'Identification/Type/Type_of_declaration')+' '+xmlValue(doc,'Identification/Type/Declaration_gen_procedure_code')).trim();else if(f.path==='AUTO:ContainerNumber'){c=findContainerNumber(doc);v=c.value;p=c.path}else if(f.path==='AUTO:InvoiceNumberDate'){v=invoiceNumberDateValue(doc)}else if(f.path==='AUTO:TotalInvoiceValue'){v=xmlValue(doc,'Valuation/Total/Total_invoice')}else if(f.path==='AUTO:ItemNo'||['38','34','49','48','39'].includes(f.no)){v=itemFieldValue(itemRows,f.no)}else if(f.path==='AUTO:ConsigneeCombined'){const code=xmlValue(doc,'Traders/Consignee/Consignee_code');const name=xmlValue(doc,'Traders/Consignee/Consignee_name');v=[name,code].filter(Boolean).join(' - ')}else if(f.path==='AUTO:DeclarantCombined'){const code=xmlValue(doc,'Declarant/Declarant_code');const name=xmlValue(doc,'Declarant/Declarant_name');v=[name,code].filter(Boolean).join(' - ')}else v=xmlValue(doc,f.path);return{...f,value:v,path:p}});render(filled);renderItemTable(itemRows);renderContainerTable(doc);showStatus(c.value?'Container number found: '+c.value:'XML loaded, but Container Number ei XML file e nei. Weight thakle table e show korbe.')}catch(e){alert('XML read korte problem hocche: '+e.message)}}
 
@@ -472,7 +475,10 @@ function buildNoteSheetData(){
  };
 }
 function openNoteSheet(){
- if(!validateImportantFields())return;
+ const miss=getMissingImportantFields();
+ if(miss.length){
+  if(!confirm('Important fields empty ('+miss.join(', ')+'). Note Sheet open korben?'))return;
+ }
  localStorage.setItem('asycudaNoteSheetData',JSON.stringify(buildNoteSheetData()));
  window.location.href='note_sheet.html';
  showStatus('Note Sheet linked with current form values.');
